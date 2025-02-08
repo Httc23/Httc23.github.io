@@ -1464,6 +1464,10 @@ img[class*="about_6_1__deco-"] {
   margin-bottom: 60px;
 }
 
+.about_6_7__text p {
+  text-align: justify;
+}
+
 .about_6_7__stage {
   position: relative;
   margin-right: 80px;
