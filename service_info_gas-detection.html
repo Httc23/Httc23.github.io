@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>危險場所即時氣體偵測回報管理系統 | 鴻才科技股份有限公司</title>
+  <!-- FB用，也會影響SEO分數 -->
+  <meta property="og:title" content="危險場所即時氣體偵測回報管理系統 | 鴻才科技股份有限公司" />
+  <meta name="description" content="鴻才科技創立於2010年，致力於企業打造專屬的安全軟體，服務適用產業包含政府單位到連鎖業等，針對各場域、物品、設備進行檢核稽查等系統建置。">
+  <meta name="keywords" content="巡檢管理系統,承攬商管理系統,設備維護管理系統,行動工安稽核系統,客製安全軟體">
+  <meta property="og:description" content="鴻才科技創立於2010年，致力於企業打造專屬的安全軟體，服務適用產業包含政府單位到連鎖業等，針對各場域、物品、設備進行檢核稽查等系統建置。" />
+  <meta property="og:url" content="https://www.httc.com.tw/" />
+  <meta property="og:image" content="assets/img/demo/628x628-logo.png" />
+  <meta property="og:type" content="website" />
+  <!-- END -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- Stylesheets
+  ============================================= -->
+  <link rel="canonical" href="" />
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+  <!-- Css -->
+  <!-- ↓↓↓基底檔案↓↓↓↓ -->
+  <link href="assets/css/main1.css" rel="stylesheet">
+  <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/about.css" rel="stylesheet" />
+  <link href="assets/css/album.css" rel="stylesheet" />
+  <link href="assets/css/contact.css" rel="stylesheet" />
+  <link href="assets/css/index.css" rel="stylesheet" />
+  <link href="assets/css/link.css" rel="stylesheet" />
+  <link href="assets/css/news.css" rel="stylesheet" />
+  <link href="assets/css/privacy.css" rel="stylesheet" />
+  <link href="assets/css/product.css" rel="stylesheet" />
+  <link href="assets/css/service.css" rel="stylesheet" />
+  <link href="assets/css/cart-all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="preloader-deactive">
+  <div>
+    <!-- :: loading 區塊 -->
+    <div class="preloader_10" id="preloader">
+      <div class="preloader_10__inner">
+        <span class="preloader_10__dot"></span>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- :: header 區塊 -->
+    <header class="header_10">
+      <div class="header_10__header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 hidden-md-down p-0">
+              <div class="header_10__contact-top">
+                <span><a href="tel:07-312-8195"><i class="fas fa-phone-alt"></i><p>電話</p>07-312-8195</a></span>
+              </div>
+            </div>
+            <div class="col-lg-4 hidden-md-down p-0">
+              <div class="header_10__contact-top">
+                <span><a href="https://goo.gl/maps/gBZgWSaZoPBCVted8"><i class="fas fa-map-marker-alt"></i><p>地址</p>高雄市三民區博愛一路27號12樓</a></span>
+              </div>
+            </div>
+            <div class="col-lg-6 text-md-end text-center p-0">
+              <div class="header_10__contact-top">
+                <!-- 新增語系 -->
+                <span class="language">
+                  <a href="e-service_info_smsa.html"><li>English</li></a>
+                  <a href="service_info_smsa.html"><li class="lang">中文</li></a>
+                </span>
+                <span><a href="#"><i class="fas fa-clock"></i><p>營業時間</p>09:00~18:30</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_10__header-middle sticky-header hidden-md-down">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col col-md-2 col-sm-12 header_10__top logo">
+              <div class="header_10__header-logo-area">
+                <a href="index.html">
+                  <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_331X52">
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-10 position-relative header_10__top">
+              <div class="header_10__header-align justify-content-end">
+                <div class="header_10__header-navigation-area hidden-md-down">
+                  <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_10__main-menu nav">
+                    <li itemprop="name">
+                      <!-- 最新標註 -->
+                      <!-- <img class="news_mark" src="assets/img/demo/news_mark.png"> -->
+                      <a itemprop="url" href="news_list.html">最新消息</a>
+                    </li>
+                    <li itemprop="name" content="關於我們" class="header_10__has-submenu"><a itemprop="url" href="about.html">關於我們</a>
+                      <ul class="header_10__submenu-nav">
+                        <li itemprop="name"><a itemprop="url" href="about.html">關於鴻才</a></li>
+                        <li itemprop="name"><a itemprop="url" href="about2.html">經營理念</a></li>
+                        <li itemprop="name"><a itemprop="url" href="about3.html">核心技術/創新研發</a></li>
+                        <li itemprop="name"><a itemprop="url" href="about4.html">營運項目</a></li>
+                        <li itemprop="name"><a itemprop="url" href="security.html">資安政策</a></li>
+                      </ul>
+                    </li>
+                    <li itemprop="name" content="產品服務" class="header_10__has-submenu"><a itemprop="url" href="product_list.html">產品服務</a>
+                      <ul class="header_10__submenu-nav">
+                        <li itemprop="name"><a itemprop="url" href="product_info_grided.html">導引式巡檢管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="product_info_equipent.html">設備維護管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="product_info_contract.html">承攬商管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="product_info_ehs.html">行動工安稽核系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="product_info_machine.html">機械設備入廠行動化管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="product_info_gas.html">氣體鋼瓶管理系統</a></li>
+                      </ul>
+                    </li>
+                    <li itemprop="name" content="解決方案" class="header_10__has-submenu"><a itemprop="url" href="service_list.html">解決方案</a>
+                      <ul class="header_10__submenu-nav">
+                        <li itemprop="name"><a itemprop="url" href="service_info_aip.html">自動檢查</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_smsa.html">巡查管理及主管稽查</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_fire.html">消防防護計畫及檢查</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_eia.html">設備巡檢行動化</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_scam.html">工地承攬商管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_fcm.html">工廠承攬商管理系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="service_info_ssam.html">危險場所即時氣體偵測回報管理系統</a></li>
+                        <!-- <li itemprop="name"><a itemprop="url" href="service_info_eiepm.html">企業自主防疫管理</a></li> -->
+                      </ul>
+                    </li>
+                    <li itemprop="name" content="系統整合" class="header_10__has-submenu"><a itemprop="url" href="#">系統整合</a>
+                      <ul class="header_10__submenu-nav">
+                        <li itemprop="name"><a itemprop="url" href="agent.html">硬體代理</a></li>
+                        <li itemprop="name"><a itemprop="url" href="si_info_risk.html">高危險施工督工系統</a></li>
+                        <li itemprop="name"><a itemprop="url" href="si_info_3d.html">3D圖資平台</a></li>
+                        <li itemprop="name"><a itemprop="url" href="si_info_iot.html">ESG全方案管理~安全物聯網</a></li>
+                      </ul>
+                    </li>
+                    <li itemprop="name"><a itemprop="url" href="contact.html">聯絡我們</a></li>
+                    <!-- <li itemprop="name"><a itemprop="url" href="event_list.html">研討活動</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-header">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-sm-2 col-3 justify-content-start">
+              <div class="header-item">
+                <div class="header-logo-area">
+                  <a href="index.html">
+                    <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_90X90">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="header-item justify-content-end">
+                <!-- 新增語系rwd -->
+                <div class="header_10__lang">
+                  <span class="language">
+                    <a href="e-service_info_smsa.html"><li>EN</li></a>
+                    <a href="service_info_smsa.html"><li class="lang">中</li></a>
+                  </span>
+                </div>
+                <button class="btn-menu" type="button"><i class="fas fa-bars"></i></button>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="responsive-search-content">
+                <form action="#" method="get">
+                  <div class="form-input-item">
+                    <input type="text" name="srch_title" placeholder="找找看 ...">
+                    <button type="submit" class="btn-src">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="off-canvas-wrapper">
+      <div class="off-canvas-inner">
+        <div class="off-canvas-overlay"></div>
+        <div class="off-canvas-content">
+          <div class="off-canvas-header">
+            <div class="close-action">
+              <button class="btn-menu-close">menu<i class="icon-arrow-left"></i></button>
+            </div>
+          </div>
+          <div class="off-canvas-item">
+            <div class="res-mobile-menu menu-active-one">
+              <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="breadcrumb_6" style="background-image: url(assets/img/demo/page/1920X300-gas-detection.jpg)" alt="size_1920X300">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="breadcrumb_6__title">危險場所即時氣體偵測回報管理系統</h1>
+              <nav class="breadcrumb_6__inner">
+                <ul class="breadcrumb_6__list">
+                  <li><a href="index.html">首頁<i class="fas fa-angle-right"></i></a></li>
+                  <li><a href="service_list.html">解決方案<i class="fas fa-angle-right"></i></a></li>
+                  <li class="breadcrumb_6__current">危險場所即時氣體偵測回報管理系統</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- :: 產品主選單 -->
+      <section class="service_info_6_h">
+        <div class="container-fluid p-0">
+          <ul class="service_info_6_h__nav">
+            <li class="service_info_6_h__nav-inner"><a href="#Help">如何協助企業</li>
+            <li class="service_info_6_h__nav-inner"><a href="#Digigtal">設計理念</a></li>
+            <li class="service_info_6_h__nav-inner"><a href="#Feature">特色</a></li>
+            <li class="service_info_6_h__nav-inner"><a href="#Solution">解決方案</a></li>
+            <li class="service_info_6_h__nav-inner"><a href="#Application">應用層面</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- :: 如何協助企業 -->
+      <section id="Help" class="service_gas-detection_6_1">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+              <div class="service_gas-detection_6_1__section-title">
+                <h3 class="service_gas-detection_6_1__section-title-inner">如何協助企業</h3>
+                <h3 class="service_gas-detection_6_1__section-title-inner-en">How To Help Businesses</h3>
+              </div>
+              <div class="service_gas-detection_6_1__section-sub">
+                <h6 class="service_gas-detection_6_1__section-sub-inner">高效能氣體監測器，資料可即時收集在自建環境中，企業資訊使用靈活</h6>
+              </div>
+              <div class="service_gas-detection_6_1__disc">
+                <p>鴻才科技提供簡單好用的操作介面、搭配穩定的資料傳輸機制、資料收集更安心。<br>
+                  結合智慧型手持設備，使用者可在現場即時上傳監測數據，方便迅速。<br>
+                  可自選資料上傳位置，依使用者需求自由調整，製作最符合現場需求的操作方式。<br>系統後端具備完整管理介面，支援歷史資料查閱、過濾與匯出，方便管理者快速分析與掌握現場狀況。<br>
+                可自訂查詢的氣體種類、資料收集的地點與時間範圍，彈性篩選所需數據。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- :: 產品主圖/法源依據或困境 -->
+      <section class="service_gas-detection_6_2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- 產品主圖 -->
+            <div class="col-lg-8 wow zoomIn" data-wow-delay="0.0s" data-wow-duration="1.5s">
+              <div class="service_gas-detection_6_2__img">
+                <img src="assets/img/demo/service/gas-detection/main.png" alt="size_1000X500">
+              </div>
+            </div>
+            <!-- 常見困擾 -->
+            <div class="col-lg-12">
+              <div class="service_gas-detection_6_2__table wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+                <div class="service_gas-detection_6_2__disc-table">
+                  <div class="table-responsive table-web table-rwd">
+                    <table style="width: 100%;" data-toggle="table" data-sort-name="built" data-sort-order="asc" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th colspan="3">常見困擾</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="3">傳統作業:需要人力現場抄寫地點，偵測時間，氣體種類與數值等，回到定點後再登打到資訊系統中,數據無法同步，造成資訊落差。</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 50%;">
+                            <img src="assets/img/demo/service/gas-detection/hard1.png" alt="size_200X200">
+                            <p>手抄作業?</p>
+                          </td>
+                          <td style="width: 50%;">
+                            <img src="assets/img/demo/service/gas-detection/hard2.png" alt="size_200X200">
+                            <p>數據無法同步</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+      </section>
+      <!-- :: 情境模擬圖 -->
+      <section class="service_gas-detection_6_8 sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="service_gas-detection_6_8__content wow fadeInLeft" data-wow-delay="0.0s" data-wow-duration="1.5s">
+                <div class="service_gas-detection_6_8__section-title">
+                  <h3 class="service_gas-detection_6_8__section-title-inner">情境模擬圖</h3>
+                  <h3 class="service_gas-detection_6_8__section-title-inner-en">Simulation diagram</h3>
+                </div>
+                <div class="service_gas-detection_6_8__text">
+                  <p></p>
+                </div>
+              </div>    
+            </div>
+            <div class="col-lg-12">
+              <div class="service_gas-detection_6_8__img-wrap wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+                <img class="service_gas-detection_6_8__icon1" data-wow-delay="0.0s" data-wow-duration="1.5s" data-wow-iteration="infinite" src="assets/img/demo/service/gas-detection/0.png">
+              </div>   
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- :: 設計理念 -->
+      <section id="Digigtal" class="service_aip_6_3 sec-padding" data-wow-delay="0.0s" data-wow-duration="1.5s" style="background-image: url(assets/img/demo/service/service_info_6_3_bg.png); background-size: cover;">
+        <div class="container-fluid">
+          <div class="service_aip_6_3__section-title wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+            <h3 class="service_aip_6_3__section-title-inner">設計理念</h3>
+            <h3 class="service_aip_6_3__section-title-inner-en">Design Concept</h3>
+          </div>
+          <div class="service_aip_6_3__detial-section">
+            <!-- 輪播圖 -->
+            <div class="service_aip_6_3__swiper-outer wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+              <div class="swiper service_aip_6_3__swiper">
+                <div class="swiper-wrapper service_aip_6_3__swiper-wrapper">
+                  <!-- 1-0 -->
+                  <!-- <div class="swiper-slide">
+                    <div class="service_aip_6_3__product-item">
+                      <div class="service_aip_6_3__inner-content">
+                        <img class="service_aip_6_3__product-thumb" src="assets/img/demo/service/gas-detection/0.png" alt="size_1000X1000" style="width: 100%;">
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- 1-1 -->
+                  <div class="swiper-slide">
+                    <div class="service_aip_6_3__product-item">
+                      <div class="service_aip_6_3__inner-content">
+                        <img class="service_aip_6_3__product-thumb" src="assets/img/demo/service/gas-detection/1.png" alt="size_1000X1000">
+                        <div class="service_aip_6_3__product-info">
+                          <h5 class="title">企業自建資料儲存位置 — 彈性運用歷史資料</h5>
+                          <ul>
+                            <li>提供高度自由的資料儲存選項，使用者可依需求指定儲存位置，有效管理與運用歷史檢測紀錄。</li>
+                            <li>資料傳輸過程無須經由雲端平台，操作彈性高。</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 1-2 -->
+                  <div class="swiper-slide">
+                    <div class="service_aip_6_3__product-item">
+                      <div class="service_aip_6_3__inner-content">
+                        <img class="service_aip_6_3__product-thumb" src="assets/img/demo/service/gas-detection/2.png" alt="size_1000X1000">
+                        <div class="service_aip_6_3__product-info">
+                          <h5 class="title">安全無線操作 — 行動巡檢更靈活</h5>
+                          <ul>
+                            <li>操作簡易、裝備輕便，適合各類型作業現場使用。</li>
+                            <li>手機搭配 MSA 氣體檢測器，即可完成巡檢作業，大幅提升現場操作便利度與效率。</li>
+                            <li>使用4G/5G即可進行傳輸。</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination1"></div>
+              <div class="service_aip_6_3__swiper-button__wrapper">
+                <div class="swiper-button-next service_aip_6_3__next"></div>
+                <div class="swiper-button-prev service_aip_6_3__prev"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <!-- :: 特色 -->
+      <section id="Feature" class="service_gas-detection_6_4">
+        <div class="row">
+          <div class="col-lg-6 p-0">
+            <div class="service_gas-detection_6_4__content wow fadeInLeft" data-wow-delay="0.0s" data-wow-duration="1.5s">
+              <div class="service_gas-detection_6_4__section-title">
+                <h3 class="service_gas-detection_6_4__section-title-inner">特色</h3>
+                <h3 class="service_gas-detection_6_4__section-title-inner-en">Feature</h3>
+              </div>
+              <div class="service_gas-detection_6_4__text">
+                <ul>
+                  <li>自選資料儲存地：可回傳至企業自建主機或是傳送至雲端儲存大幅增加公司數據運用自由度。</li>
+                  <li>操作簡易：即時透過APP監控，讓作業更簡便執行。</li>
+                </ul>
+              </div>  
+            </div>  
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="service_gas-detection_6_4__img-wrap wow fadeInRight" style="background-image: url(assets/img/demo/service/service_info_6_4-bg.jpg)" data-wow-delay="0.0s" data-wow-duration="1.5s">
+              <div class="service_gas-detection_6_4__img-content">
+                <div class="row">
+                  <!-- 項目 -->
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-item">
+                    <div class="service_gas-detection_6_4__img-box">
+                      <div class="service_gas-detection_6_4__icon"><img src="assets/img/demo/service/gas-detection/service_6_4__icon1.svg"></div>
+                      <span>自選資料儲存地</span> 
+                    </div>
+                  </div>
+                  <!-- 項目 -->
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-item">
+                    <div class="service_gas-detection_6_4__img-box">
+                      <div class="service_gas-detection_6_4__icon"><img src="assets/img/demo/service/gas-detection/service_6_4__icon2.svg"></div>
+                      <span>操作簡易</span> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- :: 解決方法 -->
+      <section id="Solution" class="service_gas-detection_6_6 sec-padding">
+        <img alt="" class="service_gas-detection_6_6__deco-1 wow fadeIn" data-wow-delay="0.0s" data-wow-duration="1.5s" src="assets/img/demo/service/service_info_6_6-1.png">
+        <img alt="" class="service_gas-detection_6_6__deco-2 wow fadeIn" data-wow-delay="0.0s" data-wow-duration="1.5s" src="assets/img/demo/service/service_info_6_6-2.png">
+        <img alt="" class="service_gas-detection_6_6__deco-3 wow fadeIn" data-wow-delay="0.0s" data-wow-duration="1.5s" src="assets/img/demo/service/service_info_6_6-3.png">
+        <div class="container wow zoomIn" data-wow-delay="0.0s" data-wow-duration="1.5s">
+          <div class="service_gas-detection_6_6__section-title wow fadeInDown" data-wow-delay="0.0s" data-wow-duration="1.5s">
+            <h3 class="service_gas-detection_6_6__section-title-inner">解決方法</h3>
+            <h3 class="service_gas-detection_6_6__section-title-inner-en">Solution</h3>
+          </div>
+          <div class="row">
+            <!-- 方案1 -->
+            <div class="col-lg-3 col-md-6 col-item">
+              <div class="service_gas-detection_6_6__item">
+                <div class="service_gas-detection_6_6__item-text">
+                  <h6 class="service_gas-detection_6_6__item-title">即時氣體偵測管理系統</h6>
+                </div>  
+                <p>氣體偵測裝置、資料傳輸行動裝置模組(支援Android)、資料查詢模組(使用RWD網頁查詢)，後臺維護管理模組與資料庫。</p>
+              </div>
+            </div>
+            <!-- 方案2 -->
+            <div class="col-lg-3 col-md-6 col-item">
+              <div class="service_gas-detection_6_6__item">
+                <div class="service_gas-detection_6_6__item-text">
+                  <h6 class="service_gas-detection_6_6__item-title">提供APP</h6>
+                </div>
+                <p>使用者友善設計，簡化操作流程，讓資訊掌握在手。</p>
+              </div>
+            </div>
+            <!-- 方案3 -->
+            <div class="col-lg-3 col-md-6 col-item">
+              <div class="service_gas-detection_6_6__item">
+                <div class="service_gas-detection_6_6__item-text">
+                  <h6 class="service_gas-detection_6_6__item-title">硬體設備</h6>
+                  <div class="service_gas-detection_6_6__item-number">3<span>種</span></div>
+                </div>
+                <p>伺服器、個人電腦、氣體偵測裝備</p>
+              </div>
+            </div>
+            <!-- 方案4 -->
+            <div class="col-lg-3 col-md-6 col-item">
+              <div class="service_gas-detection_6_6__item">
+                <div class="service_gas-detection_6_6__item-text">
+                  <h6 class="service_gas-detection_6_6__item-title">加購項目</h6>
+                </div>
+                <p>可加購工作許可證、導引式巡檢管理系統。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- :: 應用層面 -->
+      <section id="Application" class="service_gas-detection_6_7">
+        <div class="container">
+          <div class="service_gas-detection_6_7__section-title wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+            <h3 class="service_gas-detection_6_7__section-title-inner">應用層面</h3>
+            <h3 class="service_gas-detection_6_7__section-title-inner-en">Application</h3>
+          </div>
+          <div class="service_gas-detection_6_7__content wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+            <div class="row">
+              <!-- 項目1 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-item">
+                <div class="service_gas-detection_6_7__item">
+                  <div class="service_gas-detection_6_7__item-img">
+                    <img src="assets/img/demo/service/gas-detection/industry1.png" alt="size_800X500">
+                  </div>  
+                  <h6 class="service_gas-detection_6_7__item-title">工程</h6>
+                </div>
+              </div>
+              <!-- 項目2 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-item">
+                <div class="service_gas-detection_6_7__item">
+                  <div class="service_gas-detection_6_7__item-img">
+                    <img src="assets/img/demo/service/gas-detection/industry2.png" alt="size_800X500">
+                  </div>  
+                  <h6 class="service_gas-detection_6_7__item-title">巡檢</h6>
+                </div>
+              </div>
+              <!-- 項目3 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-item">
+                <div class="service_gas-detection_6_7__item">
+                  <div class="service_gas-detection_6_7__item-img">
+                    <img src="assets/img/demo/service/gas-detection/industry3.png" alt="size_800X500">
+                  </div>  
+                  <h6 class="service_gas-detection_6_7__item-title">稽查</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service_gas-detection_6_7__text wow fadeInUp" data-wow-delay="0.0s" data-wow-duration="1.5s">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <p>適用各類需氣體偵測環境適用各種工程、巡檢、稽查等。</p>  
+              </div>
+            </div>
+          </div>    
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer_6">
+      <div class="container">
+        <div class="pb-80 pb-md-20">
+          <div class="row justify-content-between">
+            <div class="col-lg-2 col-md-12">
+              <div class="footer_6__widget-item">
+                <div class="footer_6__about-widget">
+                  <div class="footer_6__footer-logo">
+                    <a href="index.html">
+                      <img class="logo-light" src="assets/img/demo/footer-logo.png" alt="logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="footer_6__widget-item">
+                <h3 class="footer_6__title">公司簡介</h3>
+                <div class="widget-desc">
+                  <p>導引式巡檢管理系統、設備維護管理系統、承攬商管理系統、行動工安稽核系統、機械設備入廠行動化管理系統、氣體鋼瓶管理系統、自動檢查、巡查管理及主管稽查、消防防護計畫及檢查、設備巡檢行動化、工地承攬商管理系統、工廠承攬商管理系統、企業自主防疫管理、高危險施工督工系統、3D圖資平台、ESG全方案管理~安全物聯網</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div class="footer_6__widget-item">
+                <h3 class="footer_6__title">網站地圖</h3>
+                <div>
+                  <ul class="footer_6__nav-menu">
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="news_list.html">最新消息</a></li>
+                    <li><a href="product_list.html">產品服務</a></li>
+                    <li><a href="service_list.html">解決方案</a></li>
+                    <li><a href="agent.html">系統整合</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                    <!-- <li><a href="event_list.html">研討活動</a></li> -->
+                    <li><a href="privacy.html">隱私權政策</a></li>
+                    <li><a href="security.html">資安政策</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer_6__widget-item">
+                <h3 class="footer_6__title">聯絡我們</h3>
+                <div>
+                  <ul class="footer_6__contact-list">
+                    <p style="margin-bottom: 15px;">高雄總公司</p>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="tel:07-312-8195"><i class="footer_6__contact-icon fas fa-phone-alt" aria-hidden="true"></i>07-312-8195</a>
+                    </li>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="https://goo.gl/maps/MiyxiJZinLTVWSQ8A" target="_bank"><i class="footer_6__contact-icon fas fa-map-marker-alt" aria-hidden="true"></i><span>高雄市三民區博愛一路27號12樓</span></a>
+                    </li>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="tel:07-323-2157"><i class="footer_6__contact-icon fas fa-fax" aria-hidden="true"></i>07-323-2157</a>
+                    </li>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="mailto:httc@mail.httc.com.tw"><i class="footer_6__contact-icon fas fa-envelope" aria-hidden="true"></i>httc@mail.httc.com.tw</a>
+                    </li>
+                    <p style="margin-bottom: 15px;">桃園辦事處</p>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="tel:03-356-0700"><i class="footer_6__contact-icon fas fa-phone-alt" aria-hidden="true"></i>03-356-0700</a>
+                    </li>
+                    <li class="footer_6__contact-item">
+                      <a class="footer_6__contact-link" href="https://maps.app.goo.gl/6x6Mf8Vvyb69Tbj3A" target="_bank"><i class="footer_6__contact-icon fas fa-map-marker-alt" aria-hidden="true"></i><span>桃園市中壢區高鐵站前西路一段268號15樓之7</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_6__footer-bottom">
+        <div class="container">
+          <div class="footer_6__bottom-txt">
+            <p class="footer_6__copyright">鴻才科技股份有限公司 © 2023Copyright.All Right Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-to-top" class="footer_6__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+  </div>
+  <!-- #wrapper end -->
+
+
+
+  <!-- ↓↓↓基底檔案↓↓↓↓ -->
+  <script src="assets/js/main1.js"></script>
+  <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+  <script src="assets/js/custom.js"></script>
+  <script>
+  //思源黑體非同步載入
+  var cb = function() {
+    var a = document.createElement('link');
+    a.rel = 'stylesheet';
+    a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+    var z = document.getElementsByTagName('head')[0];
+    z.parentNode.insertBefore(a, z);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(cb);
+  else window.addEventListener('load', cb);
+  </script>
+</body>
+
+</html>
