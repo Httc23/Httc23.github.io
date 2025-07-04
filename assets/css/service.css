@@ -6417,63 +6417,95 @@ img[class*="service_eia_6_6__deco-"] {
 /*/////////////////產品主圖/////////////////*/
 
 .service_gas-detection_6_2__img {
+  margin-bottom: 10px;
+}
+
+.service_gas-detection_6_2__title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
   margin-bottom: 100px;
-}
-
-@media (max-width: 991px) {
-  .service_gas-detection_6_2__img {
-   margin-bottom: 80px;
-  }
-}
-
-@media (max-width: 767px) {
-  .service_gas-detection_6_2__img {
-    margin-bottom: 60px;
-  }
+  color: #BCD6FF;
 }
 
 @media (max-width: 480px) {
-  .service_gas-detection_6_2__img {
-    margin-bottom: 40px;
+  .service_gas-detection_6_2__title {
+    font-size: 24px;
   }
 }
 
-/*/////////////////法源依據/////////////////*/
 
-.service_gas-detection_6_2__disc-table .table-responsive .table>:not(:first-child) {
-  border-top: none;
-}
+/*/////////////////常見困擾/////////////////*/
 
-.service_gas-detection_6_2__disc-table .table-responsive table tr {
-  border-width: 1px;
-}
-
-.service_gas-detection_6_2__disc-table .table-responsive table td {
-  border-width: 1px;
-  text-align: center;
-  padding: 30px;
+.service_gas-detection_6_2__disc-table {
+  border: solid 1px #dee2e6;
   color: #6f6f6f;
   line-height: 2;
   letter-spacing: 0.15em;
   font-size: 16px;
-  width: 50%;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .service_gas-detection_6_2__disc-table .table-responsive table td {
-    padding: 15px;
-  }
-}
-
-.service_gas-detection_6_2__disc-table .table-responsive table th {
+.service_gas-detection_6_2__disc-table h5 {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
   text-align: center;
+  font-weight: bold;
+  padding: 10px 0px;
+  margin-bottom: 0px;
 }
 
-.en-version .service_gas-detection_6_2__disc-table .table-responsive table th {
-  letter-spacing: 0.01em;
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card {
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card {
+    border-bottom: 1px solid #dee2e6;
+    border-right: none;
+  }
+}
+
+.grid .service_gas-detection_6_2__card:last-child {
+  border-right: none;
+}
+
+/*.service_gas-detection_6_2__card > div {
+  flex: 1;
+}*/
+
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-text {
+  padding: 30px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-text {
+    border-top: none;
+    padding-top: 10px;
+  }
+}
+
+
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-text span {
+  font-weight: bold;
+  color: #555555;
+  display: block;
+}
+
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-img {
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-img {
+    padding: 0px;
+  }
 }
 
 
@@ -6725,7 +6757,7 @@ img[class*="service_eia_6_6__deco-"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 200px;
 }
 
 @media (max-width: 1199px) {
@@ -7078,6 +7110,7 @@ img[class*="service_eia_6_6__deco-"] {
   text-align: center;
   letter-spacing: 0.15em;
   color: var(--color-white);
+  line-height: 1.5;
 }
 
 .en-version .service_gas-detection_6_5__item-title {
@@ -7199,7 +7232,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   position: relative;
   background-color: #fff;
 }
@@ -7398,6 +7431,9 @@ img[class*="service_gas-detection_6_6__deco-"] {
   font-size: var(--font-main1);
   color: #fff;
   font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .en-version .service_gas-detection_6_7__item-title {
