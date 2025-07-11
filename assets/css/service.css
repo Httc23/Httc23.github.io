@@ -6757,10 +6757,10 @@ img[class*="service_eia_6_6__deco-"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 200px;
+  padding: 0px 100px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .service_gas-detection_6_4__img-wrap {
     padding: 0px 50px;
   }
@@ -7027,7 +7027,7 @@ img[class*="service_eia_6_6__deco-"] {
   position: relative;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1399px) {
   .col-service_gas-detection_6_5__img-box {
     width: 50%;
   }
@@ -7392,6 +7392,18 @@ img[class*="service_gas-detection_6_6__deco-"] {
 
 .service_gas-detection_6_7__content {
   margin-bottom: 32px;
+}
+
+@media (max-width: 1199px) {
+  .service_gas-detection_6_7__content .col-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .service_gas-detection_6_7__content .col-item {
+    width: 100%;
+  }
 }
 
 .service_gas-detection_6_7__item {
@@ -7954,7 +7966,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   padding: 0px 100px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .service_inqs_6_4__img-wrap {
     padding: 0px 50px;
   }
