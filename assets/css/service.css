@@ -8295,10 +8295,15 @@ img[class*="service_gas-detection_6_6__deco-"] {
   }
 }
 
+@media (max-width: 991px) {
+  .service_gas-detection_6_6 .col-item {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .service_gas-detection_6_6 .col-item {
     margin-bottom: 30px;
-    width: 100%;
   }
 }
 
@@ -8310,7 +8315,6 @@ img[class*="service_gas-detection_6_6__deco-"] {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   position: relative;
   background-color: #fff;
 }
@@ -8320,8 +8324,8 @@ img[class*="service_gas-detection_6_6__deco-"] {
   align-items: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  min-height: 100px;
+  justify-content: flex-start;
+  min-height: 80px;
 }
 
 .service_gas-detection_6_6__item-title {
@@ -8330,6 +8334,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0px;
+  width: 75%;
 }
 
 .en-version .service_gas-detection_6_6__item-title {
@@ -8337,10 +8342,6 @@ img[class*="service_gas-detection_6_6__deco-"] {
 }
 
 @media (max-width: 1199px) {
-  .service_gas-detection_6_6__item-title {
-    width: 60%;
-  }
-
   .en-version .service_gas-detection_6_6__item-title {
     font-size: 24px;
   }
@@ -8353,18 +8354,12 @@ img[class*="service_gas-detection_6_6__deco-"] {
 }
 
 .service_gas-detection_6_6__item-number {
-  width: 30%;
+  width: 25%;
   color: var(--color-secondary);
   font-size: 48px;
   font-weight: bold;
   line-height: 1;
   text-align: right;
-}
-
-@media (max-width: 1199px) {
-  .service_gas-detection_6_6__item-number {
-    width: 40%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -8383,6 +8378,25 @@ img[class*="service_gas-detection_6_6__deco-"] {
   margin-bottom: 0px;
 }
 
+.service_gas-detection_6_6__item p span {
+  margin-bottom: 0px;
+  color: #555;
+}
+
+.service_gas-detection_6_6__item ul {
+  line-height: 1.5;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+.service_gas-detection_6_6__item ul li {
+  list-style: disc;
+}
+
+.service_gas-detection_6_6__item ul li::marker {
+  color: var(--color-primary);
+  font-size: 22px;
+}
 
 /*
 -----------------------------------------------------------------------
@@ -9500,10 +9514,15 @@ img[class*="service_inqs_6_6__deco-"] {
   }
 }
 
+@media (max-width: 991px) {
+  .service_inqs_6_6 .col-item {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .service_inqs_6_6 .col-item {
     margin-bottom: 30px;
-    width: 100%;
   }
 }
 
@@ -9515,7 +9534,7 @@ img[class*="service_inqs_6_6__deco-"] {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
   background-color: #fff;
 }
@@ -9525,8 +9544,8 @@ img[class*="service_inqs_6_6__deco-"] {
   align-items: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  min-height: 100px;
+  justify-content: flex-start;
+  min-height: 80px;
 }
 
 .service_inqs_6_6__item-title {
@@ -9535,6 +9554,7 @@ img[class*="service_inqs_6_6__deco-"] {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0px;
+  width: 75%;
 }
 
 .en-version .service_inqs_6_6__item-title {
@@ -9542,10 +9562,6 @@ img[class*="service_inqs_6_6__deco-"] {
 }
 
 @media (max-width: 1199px) {
-  .service_inqs_6_6__item-title {
-    width: 60%;
-  }
-
   .en-version .service_inqs_6_6__item-title {
     font-size: 24px;
   }
@@ -9558,18 +9574,12 @@ img[class*="service_inqs_6_6__deco-"] {
 }
 
 .service_inqs_6_6__item-number {
-  width: 30%;
+  width: 25%;
   color: var(--color-secondary);
   font-size: 48px;
   font-weight: bold;
   line-height: 1;
   text-align: right;
-}
-
-@media (max-width: 1199px) {
-  .service_inqs_6_6__item-number {
-    width: 40%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -9586,6 +9596,26 @@ img[class*="service_inqs_6_6__deco-"] {
 
 .service_inqs_6_6__item p {
   margin-bottom: 0px;
+}
+
+.service_inqs_6_6__item p span {
+  margin-bottom: 0px;
+  color: #555;
+}
+
+.service_inqs_6_6__item ul {
+  line-height: 1.5;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+.service_inqs_6_6__item ul li {
+  list-style: disc;
+}
+
+.service_inqs_6_6__item ul li::marker {
+  color: var(--color-primary);
+  font-size: 22px;
 }
 
 
@@ -10743,10 +10773,15 @@ img[class*="service_cvr_6_6__deco-"] {
   }
 }
 
+@media (max-width: 991px) {
+  .service_cvr_6_6 .col-item {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .service_cvr_6_6 .col-item {
     margin-bottom: 30px;
-    width: 100%;
   }
 }
 
@@ -10758,7 +10793,6 @@ img[class*="service_cvr_6_6__deco-"] {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   position: relative;
   background-color: #fff;
 }
@@ -10768,8 +10802,8 @@ img[class*="service_cvr_6_6__deco-"] {
   align-items: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  min-height: 100px;
+  justify-content: flex-start;
+  min-height: 80px;
 }
 
 .service_cvr_6_6__item-title {
@@ -10778,6 +10812,7 @@ img[class*="service_cvr_6_6__deco-"] {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0px;
+  width: 75%;
 }
 
 .en-version .service_cvr_6_6__item-title {
@@ -10785,41 +10820,18 @@ img[class*="service_cvr_6_6__deco-"] {
 }
 
 @media (max-width: 1199px) {
-  .service_cvr_6_6__item-title {
-    width: 60%;
-  }
-
   .en-version .service_cvr_6_6__item-title {
     font-size: 24px;
   }
 }
 
-@media (max-width: 991px) {
-  .service_cvr_6_6__item-title {
-    font-size: var(--font-main2);
-    width: 100%;
-  }
-}
-
 .service_cvr_6_6__item-number {
-  width: 30%;
+  width: 25%;
   color: var(--color-secondary);
   font-size: 48px;
   font-weight: bold;
   line-height: 1;
   text-align: right;
-}
-
-@media (max-width: 1199px) {
-  .service_cvr_6_6__item-number {
-    width: 40%;
-  }
-}
-
-@media (max-width: 991px) {
-  .service_cvr_6_6__item-number {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
@@ -10836,6 +10848,26 @@ img[class*="service_cvr_6_6__deco-"] {
 
 .service_cvr_6_6__item p {
   margin-bottom: 0px;
+}
+
+.service_cvr_6_6__item p span {
+  margin-bottom: 0px;
+  color: #555;
+}
+
+.service_cvr_6_6__item ul {
+  line-height: 1.5;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+.service_cvr_6_6__item ul li {
+  list-style: disc;
+}
+
+.service_cvr_6_6__item ul li::marker {
+  color: var(--color-primary);
+  font-size: 22px;
 }
 
 
