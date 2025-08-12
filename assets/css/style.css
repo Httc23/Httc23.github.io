@@ -3612,7 +3612,7 @@ p.footer_6__copyright {
   box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
   background-color: var(--color-white);
   left: 0;
-  min-width: 225px;
+  min-width: 265px; /*原225px*/
   margin-top: 20px;
   padding: 0;
 }

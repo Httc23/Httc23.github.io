@@ -8768,42 +8768,77 @@ img[class*="service_gas-detection_6_6__deco-"] {
   }
 }
 
-/*/////////////////法源依據/////////////////*/
+/*/////////////////常見困擾/////////////////*/
 
-.service_inqs_6_2__disc-table .table-responsive .table>:not(:first-child) {
-  border-top: none;
-}
-
-.service_inqs_6_2__disc-table .table-responsive table tr {
-  border-width: 1px;
-}
-
-.service_inqs_6_2__disc-table .table-responsive table td {
-  border-width: 1px;
-  text-align: center;
-  padding: 30px;
+.service_inqs_6_2__disc-table {
+  border: solid 1px #dee2e6;
   color: #6f6f6f;
   line-height: 2;
   letter-spacing: 0.15em;
   font-size: 16px;
-  width: 50%;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .service_inqs_6_2__disc-table .table-responsive table td {
-    padding: 15px;
-  }
-}
-
-.service_inqs_6_2__disc-table .table-responsive table th {
+.service_inqs_6_2__disc-table h5 {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
   text-align: center;
+  font-weight: bold;
+  padding: 10px 0px;
+  margin-bottom: 0px;
 }
 
-.en-version .service_inqs_6_2__disc-table .table-responsive table th {
-  letter-spacing: 0.01em;
+.service_inqs_6_2__disc-table .service_inqs_6_2__card {
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .service_inqs_6_2__disc-table .service_inqs_6_2__card {
+    border-bottom: 1px solid #dee2e6;
+    border-right: none;
+  }
+}
+
+.grid .service_inqs_6_2__card:last-child {
+  border-right: none;
+}
+
+/*.service_inqs_6_2__card > div {
+  flex: 1;
+}*/
+
+.service_inqs_6_2__disc-table .service_inqs_6_2__card-text {
+  padding: 30px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .service_inqs_6_2__disc-table .service_inqs_6_2__card-text {
+    border-top: none;
+    padding-top: 10px;
+  }
+}
+
+
+.service_inqs_6_2__disc-table .service_inqs_6_2__card-text span {
+  font-weight: bold;
+  color: #555555;
+  display: block;
+}
+
+.service_inqs_6_2__disc-table .service_inqs_6_2__card-img {
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .service_inqs_6_2__disc-table .service_inqs_6_2__card-img {
+    padding: 0px;
+  }
 }
 
 
