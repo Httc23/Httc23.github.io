@@ -5649,7 +5649,7 @@ img[class*="service_scam_6_6__deco-"] {
   text-align: center;
 }
 
-.service_gas-detection_6_2__disc-table h5 {
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__disc-title {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
@@ -5695,10 +5695,11 @@ img[class*="service_scam_6_6__deco-"] {
 }
 
 
-.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-text span {
+.service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-text .title {
   font-weight: bold;
   color: #555555;
   display: block;
+  font-size: 16px;
 }
 
 .service_gas-detection_6_2__disc-table .service_gas-detection_6_2__card-img {
@@ -6048,7 +6049,7 @@ img[class*="service_scam_6_6__deco-"] {
   margin-right: 0px;   
 }
 
-.service_gas-detection_6_4__img-box span {
+.service_gas-detection_6_4__img-box .title {
   font-size: var(--font-main3);
   margin-bottom: 0px;
   letter-spacing: 0.15em;
@@ -6058,7 +6059,7 @@ img[class*="service_scam_6_6__deco-"] {
   width: calc(100% - 40px);
 }
 
-.en-version .service_gas-detection_6_4__img-box span {
+.en-version .service_gas-detection_6_4__img-box .title {
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -6663,6 +6664,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   margin-bottom: 0px;
   line-height: 1.5;
   text-align: center;
+  width: 100%;
 }
 
 .en-version .service_gas-detection_6_7__item-title {
@@ -6904,7 +6906,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   text-align: center;
 }
 
-.service_inqs_6_2__disc-table h5 {
+.service_inqs_6_2__disc-table .service_inqs_6_2__disc-title {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
@@ -6950,10 +6952,11 @@ img[class*="service_gas-detection_6_6__deco-"] {
 }
 
 
-.service_inqs_6_2__disc-table .service_inqs_6_2__card-text span {
+.service_inqs_6_2__disc-table .service_inqs_6_2__card-text .title {
   font-weight: bold;
   color: #555555;
   display: block;
+  font-size: 16px;
 }
 
 .service_inqs_6_2__disc-table .service_inqs_6_2__card-img {
@@ -7303,7 +7306,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   margin-right: 0px;   
 }
 
-.service_inqs_6_4__img-box span {
+.service_inqs_6_4__img-box .title {
   font-size: var(--font-main3);
   margin-bottom: 0px;
   letter-spacing: 0.15em;
@@ -7313,7 +7316,7 @@ img[class*="service_gas-detection_6_6__deco-"] {
   width: calc(100% - 40px);
 }
 
-.en-version .service_inqs_6_4__img-box span {
+.en-version .service_inqs_6_4__img-box .title {
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -8162,7 +8165,7 @@ img[class*="service_inqs_6_6__deco-"] {
   text-align: center;
 }
 
-.service_cvr_6_2__disc-table h5 {
+.service_cvr_6_2__disc-table .service_cvr_6_2__disc-title {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
@@ -8208,10 +8211,11 @@ img[class*="service_inqs_6_6__deco-"] {
 }
 
 
-.service_cvr_6_2__disc-table .service_cvr_6_2__card-text span {
+.service_cvr_6_2__disc-table .service_cvr_6_2__card-text .title {
   font-weight: bold;
   color: #555555;
   display: block;
+  font-size: 16px;
 }
 
 .service_cvr_6_2__disc-table .service_cvr_6_2__card-img {
@@ -8561,7 +8565,7 @@ img[class*="service_inqs_6_6__deco-"] {
   margin-right: 0px;   
 }
 
-.service_cvr_6_4__img-box span {
+.service_cvr_6_4__img-box .title {
   font-size: var(--font-main3);
   margin-bottom: 0px;
   letter-spacing: 0.15em;
@@ -8571,7 +8575,7 @@ img[class*="service_inqs_6_6__deco-"] {
   width: calc(100% - 40px);
 }
 
-.en-version .service_cvr_6_4__img-box span {
+.en-version .service_cvr_6_4__img-box .title {
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -9174,6 +9178,7 @@ img[class*="service_cvr_6_6__deco-"] {
   margin-bottom: 0px;
   line-height: 1.5;
   text-align: center;
+  width: 100%;
 }
 
 .en-version .service_cvr_6_7__item-title {
@@ -9443,7 +9448,7 @@ img[class*="service_cvr_6_6__deco-"] {
   text-align: center;
 }
 
-.service_car_6_2__disc-table h5 {
+.service_car_6_2__disc-table .service_car_6_2__disc-title {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
@@ -9489,10 +9494,11 @@ img[class*="service_cvr_6_6__deco-"] {
 }
 
 
-.service_car_6_2__disc-table .service_car_6_2__card-text span {
+.service_car_6_2__disc-table .service_car_6_2__card-text .title {
   font-weight: bold;
   color: #555555;
   display: block;
+  font-size: 16px;
 }
 
 .service_car_6_2__disc-table .service_car_6_2__card-img {
@@ -9842,7 +9848,7 @@ img[class*="service_cvr_6_6__deco-"] {
   margin-right: 0px;   
 }
 
-.service_car_6_4__img-box span {
+.service_car_6_4__img-box .title {
   font-size: var(--font-main3);
   margin-bottom: 0px;
   letter-spacing: 0.15em;
@@ -9852,7 +9858,7 @@ img[class*="service_cvr_6_6__deco-"] {
   width: calc(100% - 40px);
 }
 
-.en-version .service_car_6_4__img-box span {
+.en-version .service_car_6_4__img-box .title {
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -10444,7 +10450,7 @@ img[class*="service_car_6_6__deco-"] {
   text-align: center;
 }
 
-.service_iad_6_2__disc-table h5 {
+.service_iad_6_2__disc-table .service_iad_6_2__disc-title {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-width: 1px;
@@ -10490,10 +10496,11 @@ img[class*="service_car_6_6__deco-"] {
 }
 
 
-.service_iad_6_2__disc-table .service_iad_6_2__card-text span {
+.service_iad_6_2__disc-table .service_iad_6_2__card-text .title {
   font-weight: bold;
   color: #555555;
   display: block;
+  font-size: 16px;
 }
 
 .service_iad_6_2__disc-table .service_iad_6_2__card-img {
@@ -10856,7 +10863,7 @@ img[class*="service_car_6_6__deco-"] {
   margin-right: 0px;   
 }
 
-.service_iad_6_4__img-box span {
+.service_iad_6_4__img-box .title {
   font-size: var(--font-main3);
   margin-bottom: 0px;
   letter-spacing: 0.15em;
@@ -10866,7 +10873,7 @@ img[class*="service_car_6_6__deco-"] {
   width: calc(100% - 40px);
 }
 
-.en-version .service_iad_6_4__img-box span {
+.en-version .service_iad_6_4__img-box .title {
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -11203,6 +11210,7 @@ img[class*="service_iad_6_6__deco-"] {
   margin-bottom: 0px;
   line-height: 1.5;
   text-align: center;
+  width: 100%;
 }
 
 .en-version .service_iad_6_7__item-title {
