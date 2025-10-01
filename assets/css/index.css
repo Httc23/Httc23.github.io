@@ -238,7 +238,7 @@ index_6_8
   background: url(../img/demo/check1.svg) no-repeat;
   list-style: none;
   background-position: left 4px;
-  background-size: 14px;
+  background-size: 17px;
   padding-bottom: 5px;
   margin-left: 0px;
   padding-right: 0;
@@ -249,12 +249,14 @@ index_6_8
 @media (max-width: 576px) {
   .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content-light ul li {
     font-size: 16px;
+    background-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content-light ul li {
     font-size: 14px;
+    background-size: 14px;
   }
 }
 
