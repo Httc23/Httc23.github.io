@@ -242,7 +242,7 @@
         speed: 1000,
         spaceBetween: 0,
         autoplay: {
-          delay: 5000,
+          delay: 7000,
           disableOnInteraction: false,
         },
         effect: 'fade',
@@ -265,7 +265,7 @@
         speed: 1000,
         spaceBetween: 0,
         autoplay: {
-          delay: 5000,
+          delay: 7000,
           disableOnInteraction: false,
         },
         effect: 'fade',
