@@ -167,9 +167,13 @@ index_6_8
   font-size: 72px;
   font-weight: 700;
   line-height: 1.5;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-align: left;
   letter-spacing: 0.1em;
+}
+
+.en-version .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content .title {
+  letter-spacing: 0.01em;
 }
 
 .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content .title.transition-slide-1 {
@@ -182,6 +186,10 @@ index_6_8
   letter-spacing: 0.15em;
   text-align: left;
   margin-bottom: 10px;
+}
+
+.en-version .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content .title.transition-slide-2 {
+  letter-spacing: 0.01em;
 }
 
 .index_6_1 .home-slider-container .home-slider-wrapper.slider-default .slider-content-area .slider-content .btn-slide {

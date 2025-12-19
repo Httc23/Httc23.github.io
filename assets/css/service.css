@@ -349,6 +349,7 @@
   align-items: center;
   min-height: 90px;
   letter-spacing: 0.01em;
+  justify-content: center;
 }
 
 @media (max-width: 1199px) {
@@ -4586,6 +4587,10 @@ img[class*="service_eia_6_6__deco-"] {
   margin-bottom: 0px;
 }
 
+.en-version .service_scam_6_2__disc-table h5 {
+  letter-spacing: 0.01em;
+}
+
 .service_scam_6_2__disc-table .service_scam_6_2__card {
   border-right: 1px solid #dee2e6;
   display: flex;
@@ -4614,6 +4619,10 @@ img[class*="service_eia_6_6__deco-"] {
   text-align: center;
 }
 
+.en-version .service_scam_6_2__disc-table .service_scam_6_2__card-text {
+  letter-spacing: 0.01em;
+}
+
 @media (max-width: 991px) {
   .service_scam_6_2__disc-table .service_scam_6_2__card-text {
     border-top: none;
@@ -4626,6 +4635,10 @@ img[class*="service_eia_6_6__deco-"] {
   font-weight: bold;
   color: #555555;
   display: block;
+}
+
+.en-version .service_scam_6_2__disc-table .service_scam_6_2__card-text span {
+  letter-spacing: 0.01em;
 }
 
 .service_scam_6_2__disc-table .service_scam_6_2__card-img {

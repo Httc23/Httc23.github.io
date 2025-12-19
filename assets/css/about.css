@@ -2750,6 +2750,10 @@ img[class*="about_6_14__deco-"] {
   transition: .5s;
 }
 
+.en-version .about_6_16__item {
+  height: 28rem;
+}
+
 /*.about_6_16__item:before {
   position: absolute;
   content: '';

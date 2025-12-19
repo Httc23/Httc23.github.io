@@ -3172,6 +3172,10 @@ img[class*="product_info_6_6__application_ehs-deco-"] {
   text-align: left;
 }
 
+.en-version .product_info_6_8__section-title-inner {
+  letter-spacing: 0.01em;
+}
+
 .product_info_6_8__section-title-inner:last-child {
   margin-bottom: 0;
 }
