@@ -2754,6 +2754,12 @@ img[class*="about_6_14__deco-"] {
   height: 28rem;
 }
 
+@media (max-width: 767px) {
+  .en-version .about_6_16__item {
+    height: 24rem;
+  }
+}
+
 /*.about_6_16__item:before {
   position: absolute;
   content: '';

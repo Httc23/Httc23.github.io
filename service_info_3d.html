@@ -42,7 +42,7 @@
 </head>
 
 <body class="preloader-deactive">
-  <div style="overflow-x: hidden;">
+  <div>
     <!-- :: loading 區塊 -->
     <div class="preloader_10" id="preloader">
       <div class="preloader_10__inner">
@@ -131,7 +131,7 @@
                         <li itemprop="name"><a itemprop="url" href="service_info_3d.html">3D圖資平台</a></li>
                       </ul>
                     </li>
-                    <li itemprop="name" content="安全物聯網" class="header_10__has-submenu"><a itemprop="url" href="si_info_iot.html">安全物聯網</a>
+                    <li itemprop="name" content="安全物聯網" class="header_10__has-submenu"><a itemprop="url" href="iot_list.html">安全物聯網</a>
                       <ul class="header_10__submenu-nav">
                         <li itemprop="name"><a itemprop="url" href="service_info_cvr.html">危險施工即時錄影系統</a></li>
                         <li itemprop="name"><a itemprop="url" href="service_info_gas.html">行動式氣體偵測系統</a></li>
@@ -232,17 +232,15 @@
         </div>
       </div>
       <!-- :: 產品主選單 -->
-      <section class="product_info_6_h">
-        <div class="container-fluid p-0">
-          <ul class="product_info_6_h__nav">
-            <li class="product_info_6_h__nav-inner"><a href="#Help">如何協助企業</a></li>
-            <li class="product_info_6_h__nav-inner"><a href="#Design">設計理念</a></li>
-            <li class="product_info_6_h__nav-inner"><a href="#Function">系統概要</a></li>
-            <li class="product_info_6_h__nav-inner"><a href="#Feature">產品說明</a></li>
-            <li class="product_info_6_h__nav-inner"><a href="#Application">應用層面</a></li>
-          </ul>
-        </div>
-      </section>
+      <nav id="stickyNav" class="sticky-nav">
+        <div class="nav-container">
+          <div class="nav-item active" data-target="Help">如何協助企業</div>
+          <div class="nav-item" data-target="Design">設計理念</div>
+          <div class="nav-item" data-target="Function">系統概要</div>
+          <div class="nav-item" data-target="Description">產品說明</div>
+          <div class="nav-item" data-target="Application">應用層面</div>
+        </div>      
+      </nav>
       <!-- :: 如何協助企業 -->
       <section id="Help" class="product_info_6_1 sec-padding" style="background-image: url(assets/img/demo/product/product_info_6_1_bg.jpg);">
         <div class="container">
@@ -265,7 +263,7 @@
         </div>
       </section>
       <!-- :: 設計理念 -->
-      <section id="Design" class="product_info_6_2">
+      <section id="Design" class="product_info_6_2 sec-padding">
         <div class="container">
           <div class="product_info_6_2__wrap wow zoomIn" data-wow-delay="0.0s" data-wow-duration="1.5s">
             <img alt="" class="product_info_6_2__deco-1 wow rotateInDownLeft" data-wow-delay="0.2s" data-wow-duration="1.5s" src="assets/img/demo/index/index_6_1-deco1.png">
@@ -390,7 +388,7 @@
         </div>
       </section>
       <!-- :: 產品說明 -->
-      <section id="Feature" class="product_info_6_5 sec-padding" data-wow-delay="0.0s" data-wow-duration="1.5s">
+      <section id="Description" class="product_info_6_5 sec-padding" data-wow-delay="0.0s" data-wow-duration="1.5s">
         <div class="product_info_6_5__section-title wow fadeInDown" data-wow-delay="0.0s" data-wow-duration="1.5s">
           <img class="product_info_6_5__section-title-icon" src="assets/img/demo/product/icon2.png">
           <h3 class="product_info_6_5__section-title-inner">產品說明</h3>
@@ -617,9 +615,8 @@
           </div>
         </div>    
       </section>
-      
-
     </main>
+
     <footer class="footer_6">
       <div class="container">
         <div class="pb-80 pb-md-20">
@@ -652,7 +649,7 @@
                     <li><a href="news_list.html">最新消息</a></li>
                     <li><a href="product_list.html">產品服務</a></li>
                     <li><a href="service_list.html">解決方案</a></li>
-                    <li><a href="si_info_iot.html">安全物聯網</a></li>
+                    <li><a href="iot_list.html">安全物聯網</a></li>
                     <li><a href="contact.html">聯絡我們</a></li>
                     <!-- <li><a href="event_list.html">研討活動</a></li> -->
                     <li><a href="privacy.html">隱私權政策</a></li>

@@ -94,83 +94,88 @@ product_info_6_9 (案例實績)
 -----------------------------------------------------------------------
 */
 
-.product_info_6_h__nav {
+
+/* 產品選單黏住 */
+.sticky-nav {
+  position: sticky;
+  position: -webkit-sticky; /* Safari 相容 */
+  border-bottom: 1px solid #eee;
+  top: 78px; /* 這裡要設為「主選單 Header」的高度 */
+  background: white; 
+  z-index: 998;
+  width: 100%;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+}
+
+
+@media (max-width: 480px) {
+  .sticky-nav {
+    top: 70px;
+  }
+}
+
+.sticky-nav .nav-container {
+  position: relative;
   display: flex;
-  margin-bottom: 0px;
-  flex-wrap: wrap;
-}
-
-.product_info_6_h__nav.nav_machine {
   justify-content: center;
-}
-
-.product_info_6_h__nav-inner {
-  padding: 40px 20px;
-  width: 20%;
-  font-weight: bold;
-  font-size: var(--font-main3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.en-version .product_info_6_h__nav-inner a {
-  letter-spacing: 0.01em;
-}
-
-.product_info_6_h__nav-title {
-  padding: 40px 20px;
-  width: 25%;
-  font-size: var(--font-main3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #005DB4;
-  color: #fff;
-  font-weight: bold;
-  font-size: var(--font-main3);
-  letter-spacing: 0.15em;
-  text-align: center;
-}
-
-@media (max-width: 1399px) {
-  .product_info_6_h__nav-inner {
-    padding: 30px 10px;
-  }
-
-  .product_info_6_h__nav-title {
-    padding: 30px 10px;
-  }
-}
-
-@media (max-width: 1299px) {
-  .product_info_6_h__nav-inner {
-    font-size: 18px;
-  }
-
-  .product_info_6_h__nav-title {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .product_info_6_h__nav-title {
-    width: 100%;
-  }
-
-  .product_info_6_h__nav-inner {
-    width: 20%;
-  }
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0px 10px;
+  margin: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS 滑動優化，讓滑動更順暢 */
+  -ms-overflow-style: none; /* 隱藏捲軸 (美觀用，針對 Firefox, IE, Edge) */ 
+  scrollbar-width: none; /* 隱藏捲軸 (美觀用，針對 Firefox, IE, Edge) */
 }
 
 @media (max-width: 767px) {
-  .product_info_6_h__nav-inner {
-    display: none;
+  .sticky-nav .nav-container {
+    justify-content: flex-start;
   }
+}
 
-  .product_info_6_h__nav-title {
-    border-bottom: solid 1px var(--color-white);
-  }
+.sticky-nav .nav-item {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  position: relative;
+  flex: 0 0 auto; 
+  padding: 20px 20px; /* 增加點擊範圍 */
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s; /* 加上過渡動畫 */
+  color: #979494;
+}
+
+.en-version .sticky-nav .nav-item {
+  letter-spacing: 0.01em;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0px; /* 線的位置 */
+  left: 50%; /* 從正中間開始 */
+  width: 0; /* 一開始寬度是 0 (看不到) */
+  height: 4px;/* 線的粗細 */
+  background-color: #0066cc;
+  transition: all 0.3s ease-out; /* 動畫設定 */
+  transform: translateX(-50%);   /* 修正置中位置 */
+}
+
+
+/* 🔥 被激活時的樣式 */
+.sticky-nav .nav-item.active {
+  color: #0066cc;
+  font-weight: bold;
+  background-color: rgba(0, 102, 204, 0.1);
+  border: none !important;
+}
+
+.sticky-nav .nav-item.active::after {
+    width: 100%; 
 }
 
 
@@ -186,7 +191,6 @@ product_info_6_9 (案例實績)
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-bottom: 200px;
 }
 
 .product_info_6_1:before {
@@ -260,7 +264,6 @@ product_info_6_9 (案例實績)
 }
 
 
-
 /*
 -----------------------------------------------------------------------
   product_info_6_2(設計理念)
@@ -269,28 +272,6 @@ product_info_6_9 (案例實績)
 
 .product_info_6_2 {
   position: relative;
-  padding-bottom: 100px;
-  margin-top: -100px; 
-}
-
-@media (max-width: 991px) {
-  .product_info_6_2 {
-    padding-bottom: 80px;
-    margin-top: -120px;
-  }
-}
-
-@media (max-width: 767px) {
-  .product_info_6_2 {
-    padding-bottom: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product_info_6_2 {
-    padding-bottom: 40px;
-    margin-top: -140px;
-  }
 }
 
 .product_info_6_2__wrap {
