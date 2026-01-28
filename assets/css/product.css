@@ -264,6 +264,20 @@ product_info_6_9 (案例實績)
 }
 
 
+.product_info_6_1__disc ul {
+  position: relative;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+.product_info_6_1__disc ul li {
+  color: var(--color-white);
+  line-height: 2;
+  letter-spacing: 0.15em;
+  list-style: disc;
+}
+
+
 /*
 -----------------------------------------------------------------------
   product_info_6_2(設計理念)
