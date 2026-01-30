@@ -277,6 +277,10 @@ product_info_6_9 (案例實績)
   list-style: disc;
 }
 
+.en-version .product_info_6_1__disc ul li {
+  letter-spacing: 0.01em;
+}
+
 
 /*
 -----------------------------------------------------------------------
