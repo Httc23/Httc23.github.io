@@ -574,6 +574,36 @@ img[class*="about_6_1__deco-"] {
 
 /*/////////////////日期時間/////////////////*/
 
+.about_6_3__title {
+  display: block;
+  font-weight: 700;
+  font-size: var(--font-main2);
+  line-height: 1.5;
+  color: var(--color-black);
+  padding-bottom: 30px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.about_6_3__title .date {
+  position: relative;
+  display: block;
+}
+
+.about_6_3__title .date-radius {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 13px;
+  display: block;
+  border-radius: 10px;
+  background-color: var(--color-text);
+  top: 50%;
+  -webkit-transform: translateX(-3%) translateY(calc(-50%));
+  transform: translateX(-3%) translateY(calc(-50%));
+  left: -65px;
+}
+
 .about_6_3__date {
   display: block;
   max-width: 250px;
