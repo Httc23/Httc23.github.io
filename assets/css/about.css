@@ -819,11 +819,24 @@ img[class*="about_6_1__deco-"] {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   overflow: hidden;
+  display: block;
+}
+
+.about_6_4__img-rwd {
+  display: none;
 }
 
 @media (max-width: 991px) {
   .about_6_4__img {
-    height: auto;
+    display: none;
+  }
+
+  .about_6_4__img-rwd {
+    height: 100%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
   }
 }
 
