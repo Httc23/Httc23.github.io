@@ -126,6 +126,17 @@
   background-color: var(--color-white);*/
 }
 
+.service_iot_6_1__disc ul li {
+  line-height: 2;
+  letter-spacing: 0.15em;
+  list-style: disc;
+  margin-left: 27px;
+}
+
+.en-version .service_iot_6_1__disc ul li {
+  letter-spacing: 0.01em;
+}
+
 @media (max-width: 991px) {
   .service_6_1__content {
     margin-bottom: 20px;
