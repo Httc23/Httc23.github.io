@@ -84,7 +84,7 @@ contact_6_2(送出完成頁)
   padding: 0px 25px 60px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 10px;
   height: 100%;
 }

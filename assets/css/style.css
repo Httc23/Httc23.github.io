@@ -2639,6 +2639,7 @@ p.footer_6__copyright {
   filter: drop-shadow(var(--color-text) 400px 0);
 }
 
+
 /*樣式4*/
 .btn_6 .btn-4 {
   background: var(--color-secondary);
@@ -2670,6 +2671,32 @@ p.footer_6__copyright {
   filter: drop-shadow(var(--color-text) 400px 0);
 }
 
+
+/*樣式5*/
+.btn_6 .btn-5 {
+  color: var(--color-white);
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: var(--color-white);
+}
+
+.btn_6 .btn-5:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+.btn_6 .btn-5 img {
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+}
+
+.btn_6 .btn-5:hover img {
+  margin-left: 10px;
+  left: -200px;
+  filter: drop-shadow(var(--color-white) 200px 0);
+}
 
 /*
 -----------------------------------------------------------------------
