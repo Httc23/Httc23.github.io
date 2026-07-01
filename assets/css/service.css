@@ -3,7 +3,7 @@
   service_6
     列表頁
       service_6_1(前言)
-      service_6_2(後疫情世代)
+      service_6_2(設計理念)
       service_6_3(授權方式)
       service_6_4(硬體環境)
 
@@ -126,11 +126,34 @@
   background-color: var(--color-white);*/
 }
 
+.en-version .service_iot_6_1__disc p {
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+}
+
+.service_iot_6_1__disc p {
+  margin-bottom: 30px;
+}
+
+.service_iot_6_1__disc h6 {
+  font-weight: bold;
+  color: var(--color-primary);
+  line-height: 1.6;
+}
+
+.en-version .service_iot_6_1__disc h6 {
+  letter-spacing: 0.01em;
+}
+
 .service_iot_6_1__disc ul li {
   line-height: 2;
   letter-spacing: 0.15em;
   list-style: disc;
   margin-left: 27px;
+}
+
+.en-version .service_iot_6_1__disc ul li {
+  line-height: 1.6;
 }
 
 .en-version .service_iot_6_1__disc ul li {
@@ -146,7 +169,7 @@
 
 /*
 -----------------------------------------------------------------------
-    service_6_2(後疫情世代)
+    service_6_2(設計理念)
 -----------------------------------------------------------------------
 */
 
@@ -197,7 +220,7 @@
 
 @media (max-width: 375px) {
   .en-version .service_6_2__section-title {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -274,6 +297,67 @@
     margin-bottom: 20px;
   }
 }
+
+.service_6_2__item {
+  position: relative;
+  /*border-radius: 12px;*/
+  overflow: hidden;
+  border-top: solid 5px var(--color-primary);
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+.service_6_2__item-title {
+  color: var(--color-white);
+  letter-spacing: 0.15em;
+  font-size: var(--font-text);
+  font-weight: bold;
+  background-color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 2;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.en-version .service_6_2__item-title {
+  letter-spacing: 0.01em;
+}
+
+.service_6_2__item p {
+  position: relative;
+  letter-spacing: 0.15em;
+  font-size: var(--font-text);
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+  padding: 15px;
+}
+
+.en-version .service_6_2__item p {
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/*@media (max-width: 767px) {
+  .service_6_2__wrap {
+    padding: 30px;
+  }
+}
+
+.product_info_6_2__img {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .product_info_6_2__img {
+    margin-bottom: 30px;
+  }
+}*/
 
 
 /*
