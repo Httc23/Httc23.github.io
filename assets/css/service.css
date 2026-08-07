@@ -11681,6 +11681,78 @@ img[class*="service_car_6_6__deco-"] {
   letter-spacing: 0.01em;
 }
 
+.service_aifire_6_1__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.service_aifire_6_1__section-header::before,
+.service_aifire_6_1__section-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #d1d5db; /* 淺灰色線條 */
+}
+
+/*/////////////////卡片/////////////////*/
+
+.service_aifire_6_1__box {
+  margin-bottom: 50px;
+}
+
+.service_aifire_6_1__card {
+  position: relative;
+  line-height: 2;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 40px 28px;
+  border-radius: 20px;
+  background-color: #DBE7FF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service_aifire_6_1__card-title {
+  position: relative;
+  color: var(--color-primary);
+  font-size: var(--font-main3);
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  z-index: 1;
+}
+
+.service_aifire_6_1__card-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+  position: relative;
+  padding-top: 16px;
+}
+
+.service_aifire_6_1__card-subtitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 7px;
+  background-color: #478FFF; /* 亮藍色線條 */
+  border-radius: 20px;
+}
+
+.service_aifire_6_1__card-desc {
+  color: #626262;
+  font-size: 16px;
+  text-align: justify;
+  word-break: break-word;
+  position: relative;
+  z-index: 1;
+}
 
 /*
 -----------------------------------------------------------------------
