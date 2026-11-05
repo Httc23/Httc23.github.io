@@ -9446,7 +9446,7 @@ img[class*="service_inqs_6_6__deco-"] {
 }
 
 
-/*/////////////////常見困擾/////////////////*/
+/*/////////////////管理流程/////////////////*/
 
 .service_cvr_6_2__disc-table {
   border: solid 1px #dee2e6;
@@ -9531,6 +9531,448 @@ img[class*="service_inqs_6_6__deco-"] {
     padding: 0px;
   }
 }
+
+
+/*/////////////////管理效益/////////////////*/
+
+.benefits-section {
+    --benefits-navy: #0F2B5B;
+    --benefits-blue: #0c70ce;
+    --benefits-line: #d7e3ef;
+    --benefits-center-width: 310px;
+    box-sizing: border-box;
+    padding: 68px 20px 70px;
+    color: #152438;
+    background: #ffffff;
+}
+
+.benefits-section *,
+.benefits-section *::before,
+.benefits-section *::after {
+    box-sizing: border-box;
+}
+
+.benefits-container {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+/* 標題、說明 */
+.benefits-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin: 0;
+    color: var(--color-primary);
+    font-size: var(--font-main3);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.benefits-heading::before,
+.benefits-heading::after {
+    content: "";
+    display: block;
+    flex: 1;
+    max-width: 460px;
+    height: 1px;
+    background: #a2bdd9;
+}
+
+.benefits-summary {
+    margin: 16px auto 48px;
+    color: #555555;
+    font-size: var(--font-text);
+    line-height: 1.75;
+    text-align: center;
+}
+
+/* 左右兩整塊背景，不將每一列切成獨立卡片 */
+.benefits-board {
+    position: relative;
+    isolation: isolate;
+    /*padding-bottom: 20px;*/
+}
+
+.benefits-board::before,
+.benefits-board::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 44px;
+    bottom: 0;
+    width: calc((100% - var(--benefits-center-width)) / 2 + 45px);
+    pointer-events: none;
+}
+
+.benefits-board::before {
+    left: 0;
+    border-radius: 48px 115px 105px 50px;
+    background: linear-gradient(125deg, #f4f6f9 0%, #e8ecf3 90%);
+}
+
+.benefits-board::after {
+    right: 0;
+    border-radius: 115px 50px 50px 115px;
+    background: linear-gradient(110deg, #deedfc 0%, #d7ebff 95%);
+}
+
+/* 左：導入前 / 中：對照功能 / 右：導入後 */
+.benefits-board-head,
+.benefits-pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--benefits-center-width) minmax(0, 1fr);
+    align-items: center;
+}
+
+.benefits-board-head {
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-side-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    border-radius: 80px;
+    font-size: var(--font-main3);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 3px 0 #ffffff;
+}
+
+.benefits-side-title--before {
+    color: var(--benefits-navy);
+    background: linear-gradient(135deg, #d2e1f2, #e1eaf5);
+}
+
+.benefits-side-title--after {
+    color: #ffffff;
+    background: linear-gradient(125deg, #2088e5, #1269c5);
+}
+
+/* 四列對照文字 */
+.benefits-pair {
+    position: relative;
+}
+
+.benefits-before,
+.benefits-after {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 19px 30px;
+    font-size: var(--font-text);
+    line-height: 1.5;
+}
+
+.benefits-before {
+    padding-left: 70px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.benefits-after {
+    padding-left: 46px;
+    color: var(--benefits-navy);
+    font-weight: 500;
+}
+
+.benefits-pair:not(:last-child) .benefits-before::after,
+.benefits-pair:not(:last-child) .benefits-after::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: #cddbe8;
+    pointer-events: none;
+}
+
+.benefits-pair:not(:last-child) .benefits-before::after {
+    left: 5%;
+    width: 33%;
+}
+
+.benefits-pair:not(:last-child) .benefits-after::after {
+    right: 5%;
+    width: 33%;
+    background: #c2dced;
+}
+
+/* <img> Icon 共用樣式 */
+.benefits-status-icon {
+    display: block;
+    flex: 0 0 42px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.benefits-middle {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.benefits-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: calc(100% - 51px);
+    min-height: 74px;
+    padding: 8px 15px;
+    border: 1px solid #d2e1f6;
+    border-radius: 60px;
+    color: var(--benefits-navy);
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 9px 16px rgba(29, 79, 129, 0.10);
+    font-size: 21px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
+
+.benefits-feature-icon {
+    display: block;
+    flex: none;
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.benefits-arrow {
+    display: block;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.benefits-note {
+    margin: 28px auto 0;
+    color: #697a8b;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* 中型桌機、平板橫式 */
+@media (max-width: 1200px) {
+    .benefits-section {
+        --benefits-center-width: 250px;
+    }
+
+    /*.benefits-heading {
+        font-size: 38px;
+    }
+
+    .benefits-summary {
+        font-size: 17px;
+    }
+
+    .benefits-side-title {
+        font-size: 25px;
+    }*/
+
+    .benefits-before,
+    .benefits-after {
+        gap: 14px;
+        /*font-size: 18px;*/
+    }
+
+    .benefits-before {
+        padding-left: 30px;
+    }
+
+    .benefits-after {
+        padding-left: 25px;
+    }
+
+    .benefits-feature {
+        gap: 8px;
+        width: calc(100% - 35px);
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    .benefits-feature-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .benefits-arrow {
+        flex-basis: 27px;
+        width: 27px;
+    }
+
+    .benefits-status-icon {
+        flex-basis: 35px;
+    }
+}
+
+/* 平板直式、手機：上方功能標籤，下面左右對比 */
+@media (max-width: 800px) {
+    .benefits-section {
+        padding: 45px 16px 55px;
+    }
+
+    .benefits-heading {
+        gap: 12px;
+        /*font-size: 32px;*/
+    }
+
+    .benefits-summary {
+        margin: 14px auto 27px;
+        /*font-size: 15px;*/
+    }
+
+    .benefits-board-head {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .benefits-board-head-spacer {
+        display: none;
+    }
+
+    .benefits-side-title {
+        width: 100%;
+        min-height: 60px;
+        /*font-size: 22px;*/
+    }
+
+    .benefits-board::before,
+    .benefits-board::after {
+        top: 30px;
+        bottom: 0;
+        width: calc(50% - 5px);
+        border-radius: 25px;
+    }
+
+    .benefits-board::before {
+        left: 0;
+    }
+
+    .benefits-board::after {
+        right: 0;
+    }
+
+    .benefits-pair {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0 10px;
+        min-height: 136px;
+        padding: 8px 0;
+    }
+
+    .benefits-middle {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-self: center;
+        margin: 3px 0 5px;
+    }
+
+    .benefits-feature {
+        gap: 8px;
+        width: auto;
+        min-height: 38px;
+        padding: 5px 14px;
+        border-width: 1px;
+        font-size: 15px;
+    }
+
+    .benefits-feature-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .benefits-arrow {
+        display: none;
+    }
+
+    .benefits-before,
+    .benefits-after {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-row: 2;
+        gap: 7px;
+        min-height: 76px;
+        padding: 8px;
+        /*font-size: 16px;*/
+        text-align: center;
+    }
+
+    .benefits-before {
+        grid-column: 1;
+    }
+
+    .benefits-after {
+        grid-column: 2;
+    }
+
+    .benefits-status-icon {
+        flex-basis: 26px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .benefits-pair:not(:last-child) .benefits-before::after {
+        left: 5%;
+        width: 40%;
+    }
+
+    .benefits-pair:not(:last-child) .benefits-after::after {
+        right: 5%;
+        width: 40%;
+    }
+}
+
+/* 小手機 */
+@media (max-width: 430px) {
+    .benefits-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .benefits-heading {
+        /*font-size: 29px;*/
+    }
+
+    .benefits-side-title {
+        min-height: 54px;
+        padding: 12px 4px;
+        /*font-size: 17px;*/
+    }
+
+    .benefits-pair {
+        min-height: 138px;
+    }
+
+    .benefits-before,
+    .benefits-after {
+        padding: 7px 5px;
+        /*font-size: 14px;*/
+        line-height: 1.45;
+    }
+
+    .benefits-feature {
+        min-height: 34px;
+    }
+}
+
 
 
 /*
@@ -10425,121 +10867,138 @@ img[class*="service_cvr_6_6__deco-"] {
   text-align: center;
 }
 
+
+/*/////////////////副標/////////////////*/
+
+.service_cvr_6_7__subtitle {
+  margin-bottom: 40px;
+}
+
+.service_cvr_6_7__subtitle p {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
 /*/////////////////內容/////////////////*/
 
+
+/* 5張卡片橫向排列 */
 .service_cvr_6_7__content {
-  margin-bottom: 32px;
-  position: relative;
-  transition: all 0.4s ease-out;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  z-index: 1;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
 }
 
+/* 卡片 */
 .service_cvr_6_7__wrap {
-  margin-bottom: 30px;
-  box-shadow: 0 0px 30px 0px rgba(0, 0, 0, .1);
-  /*border-radius: 20px;*/
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
   overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.service_cvr_6_7__item {
-  position: relative;
-  overflow: hidden;
-  transition: 0.8s;
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  height: 100%;
-  display: flex;
-}
-
-.service_cvr_6_7__item:hover .service_cvr_6_7__item-img {
-  transform: scale(1.05);
-  transition: 0.8s;
-}
-
-.service_cvr_6_7__item-img {
-  position: relative;
-  background-size: cover;
-  width: 100%;
-  transition: 0.8s;
-}
-
-.service_cvr_6_7__item-img:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(4,44,157,0.6);
-}
-
-.service_cvr_6_7__item-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.service_cvr_6_7__item-title {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: var(--font-main1);
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 0px;
-  line-height: 1.5;
-  text-align: center;
-  width: 100%;
-}
-
-.en-version .service_cvr_6_7__item-title {
-  letter-spacing: 0.01em;
-  text-align: center;
-  font-size: var(--font-main2);
-  padding: 0px 10px;
-}
-
-@media (max-width: 1399px) {
-  .service_cvr_6_7__item-title {
-    font-size: var(--font-main2);
-  }
-}
-
-.service_cvr_6_7__text {
-  background-color: var(--color-white);
-  text-align: left;
-  position: relative;
-  padding: 24px;
+/* 清除Bootstrap row左右負邊距 */
+.service_cvr_6_7__wrap > .row {
+  margin: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.service_cvr_6_7__wrap > .row > div {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 auto;
+}
+
+/* 圖片區 */
+.service_cvr_6_7__item {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+
+.service_cvr_6_7__item-img,
+.service_cvr_6_7__item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.service_cvr_6_7__item-img img {
+  display: block;
+  object-fit: cover;
+}
+
+/* 圖片藍色遮罩 */
+.service_cvr_6_7__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 44, 157, 0.6);
+  pointer-events: none;
+}
+
+/* 圖片上標題 */
+.service_cvr_6_7__item-title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: 0;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* 下方文字 */
+.service_cvr_6_7__text {
+  padding: 16px;
+  height: 100%;
+  background: #fff;
 }
 
 .service_cvr_6_7__text ul {
-  padding-left: 24px;
-  margin-bottom: 0px;
-  line-height: 1.8;
+  margin: 0;
+  padding-left: 16px;
 }
 
-.service_cvr_6_7__text ul li {
-  list-style: disc;
+.service_cvr_6_7__text li {
+  font-size: var(--font-text);
+  line-height: 1.7;
+  color: var(--color-text);
 }
 
-.en-version .service_cvr_6_7__text ul li {
-  letter-spacing: 0.01em;
+/* Tablet */
+@media (max-width: 991px) {
+  .service_cvr_6_7__content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
 }
 
-.service_cvr_6_7__text ul li::marker {
-  color: var(--color-primary);
-  font-size: 22px;
+/* Mobile */
+@media (max-width: 575px) {
+  .service_cvr_6_7__content {
+    grid-template-columns: 1fr;
+  }
+
+  .service_cvr_6_7__item {
+    height: 200px;
+  }
+  
 }
+
 
 
 /*[安全物聯網-重型機械車牌辨識]*/

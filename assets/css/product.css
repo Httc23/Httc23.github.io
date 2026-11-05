@@ -1118,10 +1118,31 @@ img[class*="product_info_6_2__deco-"] {
   font-size: var(--font-main2);
   font-weight: bold;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .en-version .product_info_6_4__format_risk-funtion-title {
   letter-spacing: 0.01em;
+}
+
+.product_info_6_4__format_risk-funtion-disc p {
+  color: #74839b;
+  font-weight: 600;
+}
+
+.product_info_6_4__format_risk-funtion-disc ul {
+  line-height: 1.5;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+.product_info_6_4__format_risk-funtion-disc ul li {
+  list-style: disc;
+}
+
+.product_info_6_4__format_risk-funtion-disc ul li::marker {
+  color: var(--color-primary);
+  font-size: 22px;
 }
 
 
@@ -1828,6 +1849,19 @@ img[class*="product_info_6_2__deco-"] {
   .product_6_5__intro p {
     font-size: var(--font-text);
   }
+}
+
+.product_6_5__intro p span {
+  background-color: #e8eef7;
+  /*border: 1px dashed var(--color-primary);*/
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: block;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #24598f;
 }
 
 .product_info_6_5 .title {
