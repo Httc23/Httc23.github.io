@@ -61,7 +61,7 @@ product_info_6_8 (應用功能)
   內容(有分)
     巡檢
     設備
-  裝飾圖
+    裝飾圖
 
 product_info_6_9 (案例實績)
   裝飾圖
@@ -70,6 +70,10 @@ product_info_6_9 (案例實績)
   產業實績輪播
   產品實績輪播卡片
   產業類別標籤
+
+product_info_6_11 (AI應用解決方案)
+  方案tab
+  內容  
 
 
 
@@ -3912,7 +3916,50 @@ img[class*="product_info_6_9__deco-"] {
 }
 
 
-/*/////////////////活動tab/////////////////*/
+/*/////////////////大標題/////////////////*/
+
+.product_info_6_11__section-title {
+  margin-bottom: 40px;
+}
+
+.product_info_6_11__section-title-inner {
+  color: var(--color-black);
+  font-size: var(--font-main1);
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.en-version .product_info_6_11__section-title-inner {
+  letter-spacing: 0.01em;
+}
+
+.product_info_6_11__section-title-inner:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+  .product_info_6_11__section-title-inner {
+    font-size: 24px;
+  }
+}
+
+.product_info_6_11__section-title-inner-en {
+  color: var(--color-gray);
+  font-size: var(--font-text);
+  line-height: 1.5;
+  position: relative;
+  letter-spacing: 0.15em;
+  z-index: 2;
+  font-weight: 400;
+  text-align: center; 
+}
+
+
+/*/////////////////方案tab/////////////////*/
 
 .product_info_6_11__tab-nav {
   justify-content: center;
