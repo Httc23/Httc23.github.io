@@ -10671,6 +10671,32 @@ img[class*="service_cvr_6_6__deco-"] {
   text-align: left;
 }
 
+
+/*/////////////////情境模擬圖/////////////////*/
+
+.service_cvr_6_6__img {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .service_cvr_6_6__img {
+   margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service_cvr_6_6__img {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service_cvr_6_6__img {
+    margin-bottom: 40px;
+  }
+}
+
+
 /*/////////////////內容/////////////////*/
 
 .service_cvr_6_6 .col-item {
