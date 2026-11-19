@@ -3993,14 +3993,7 @@ img[class*="product_info_6_9__deco-"] {
   -o-transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 767px) {
-  .product_info_6_11__tab-nav li {
-    width: 45%;
-    margin: 0px 5px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .product_info_6_11__tab-nav li {
     width: 100%;
     margin-bottom: 10px;
@@ -4089,7 +4082,7 @@ img[class*="product_info_6_9__deco-"] {
 
 /* 方案標題 */
 .ai-intro { 
-  padding: 10px 0 36px; 
+  padding: 10px 0 10px; 
 }
 .ai-intro .ai-box { 
   margin: 0 auto; 
@@ -4268,6 +4261,7 @@ img[class*="product_info_6_9__deco-"] {
   line-height: 1.6;
   color: #8793a8;
   margin: 10px 1px 0;
+  text-align: center;
 }
 
 /* 平板：圖文改單欄，但不使用全站樣式 */
